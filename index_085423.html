@@ -1,0 +1,110 @@
+<DOCTYPEhtml>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Asterix International School</title>
+<style>
+
+
+*{margin:0; padding :0; box-sizing: border-box;}
+body{font-family: 'Segoe UI',Arial,sans-serif; line-height:1.6; color : #333;}
+/*Header*/
+header{backround:#0a2a5e;color: rgb(255, 255, 255);padding:1rem 5%;}
+.top-bar {display:flex;justify-content: space-between; align-items: center; flex-wrap: wrap;}
+.logo{font-size:1.6rem;font-weight:800;}
+.logo span{color:#ffcc00;}
+nav ul {list-style:none;display:flex;gap:1.5rem;}
+nav a{color:red;text-decoration:none;font-weight: 500;}
+nav a:hover{color:#ffcc00;}
+/*Hero*/
+.hero{background:linear-gradient(rgba(10,42,94,0.85),rgba(10,4,94,0.85)),url('https://images.unsplash.com/photo-158807559446-265f15f?w=1200') center/cover;color:white;padding:6rem 5%;text-align:center;}
+.hero h1{font-size: 2.8rem;margin-bottom:1rem;}
+.hero p{font-size:1.2rem;margin-bottom: 1rem;}
+.btn{background:#ffcc00;color: #0a2a5e; padding: 0.8rem;text-decoration: none;font-weight: 700;border-radius: 5px;display:inline-block;}
+.btn:hover{background: #e6b800;}
+
+/*Sections*/
+section{padding:4rem 5%;}
+section h2{text-align: center;color: #0a2a5e;margin-bottom:2.5rem;font-size:2rem;}
+.card{background: f8f9fa;padding:1.8rem;border-radius:8px;border-left:4px solid#ffcc00;}
+.card h3{color:#0a2a5e;margin-bottom: 0.5rem;}
+/*About*/
+.about{background:#f4f6fb;display:flex;gap:3rem;align-items: center;flex-wrap: wrap;}
+.about div {flex:1;min-width: 300px;}
+
+/*Contact*/
+.contact-form{max-width: 600px;margin: auto;display: grid;gap:1rem;}
+.contact-form input,.contact-form textarea{padding:0.8rem;border:1px solid #ccc;border-radius: 5px;width:100%;}
+.contact-form button{background:#0a2a5e;color:white;border:none;padding:0.9rem;border-radius: 5px;font-weight: 700;cursor:pointer;}
+
+/*Footer*/
+footer{background:#0a2a5e;color:#ccc;text-align: center;padding: 2rem 5%;}
+@media(max-width:768px){
+    .hero h1{font-size: 2rem;}
+    nav ul{flex-direction: column;gap:0.5rem;margin-top: 1rem;}
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+        <div class="logo"><span>AIS</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section class="hero"id="home">
+        <h1>Empowering Future Leaders</h1>
+        <p>Quality education,moral values, and holististic development since 1995</p>
+        <a href="#admission" class="btn">Apply Now</a>
+    </section>
+    <section id="about" class="about">
+        <div>
+            <h2>About Our School</h2>
+            <p>Asterix International School is commited to academic excellence and character building. We offer a safe, in clusive environment where every child is encouraged to discover their potential</p>
+            <br>
+            <p><strong>Our Mission:</strong>To nurture confident, responsible global citizens.</p>
+        </div>
+        <div class="grid">
+            <div class="card"><h3>500+ Students</h3><p>Learning with joy</p></div>
+            <div class="card"><h3>30+ Teachers</h3><p>Qualified & caring staff</p></div>
+        </div>
+    </section>
+    <section id="academics">
+        <h2>Our Programs</h2>
+        <div class="grid">
+            <div class="card"><h3>Nursery&Primary</h3><p>Play-based learning,early literacy, and numeracy foundations.</p></div>
+            <div class="card"><h3>Junior Secondary</h3><p>Strong curriculum in science, arts, and technology.</p></div>
+            <div class="card"><h3>Senior Secondary</h3><p>WAEC/NECO preparation and career guidance.</p></div>
+
+        </div>
+    </section>
+    <section id="admission" style="background:#ffcc00;text-align:center;">
+        <h2 style="color:#0a2a5e;">Admissions open 2026/2027</h2>
+        <p>Enroll your child today for a brighter future</p>
+        <br>
+        <a href="#contact" class="btn" style="background:#0a2a5e;color:white;">Contact Admissions</a>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name"required>
+            <input type="email" placeholder="Email Address"required>
+            <textarea rows="5" placeholder="Your message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>7copy; 2026 Asterix International School|Port Harcourt, Rivers state</p>
+        <p>Email:info@asterixschool.edu.ng|tel:0808137888924 whatsapp and 09128992481 call</p>
+    </footer>
+</body>
+</html>
